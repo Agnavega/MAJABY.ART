@@ -1,0 +1,247 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #7b6654;
+}
+
+/* Header */
+.header {
+    background-color: #ddd;
+    height: 300px;
+    background-image: url('https://via.placeholder.com/1500x300');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Filters Section */
+.filters {
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.filter-categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.filter-btn {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: #9a7f69;
+    color: white;
+}
+
+.filter-btn:hover {
+    background-color:  #9a7f69;
+    color: white;
+}
+
+/* Products Section */
+.products {
+    padding: 20px;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 10px  #996c46;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    padding: 10px 0;
+}
+
+.product-name {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color:  #996c46;
+}
+
+.add-to-cart {
+    background-color:  #996c46;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color:  #a98c74;
+}
+
+
+/* Estilos generales para el Modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente oscuro */
+    overflow: auto; /* Si el contenido del modal es más grande, permite scroll */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto; /* Centrar vertical y horizontalmente */
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px; /* Ancho máximo para la ventana emergente */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra alrededor del modal */
+    position: relative;
+    text-align: center;
+    animation: fadeIn 0.3s ease; /* Añadir una animación de entrada */
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.close:hover {
+    color:  #76583f; /* Cambia el color de la 'X' al pasar el mouse */
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Sombra para la imagen */
+}
+
+.modal-info {
+    text-align: center;
+}
+
+#modal-name {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0;
+}
+
+#modal-price {
+    font-size: 1.2em;
+    color: #996c46; /* Verde para el precio */
+    margin: 5px 0;
+}
+
+#modal-description {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.confirm-add-to-cart {
+    background-color:  #996c46; /* Color verde para el botón */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-add-to-cart:hover {
+    background-color:  #674b34; /* Color del botón cuando se pasa el mouse */
+}
+
+/* Footer Section */
+footer {
+    background-color:#6f5842;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.footer-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin: 0 10px;
+}
+
+.footer-content ul li a {
+    color: white;
+    font-size: 16px;
+}
+
+.footer-content ul li a:hover {
+    color: #9e7f66;
+}
+
+

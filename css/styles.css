@@ -1,0 +1,378 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5ede4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Section */
+/* Hero Section con overlay y sombra */
+.hero-section {
+    position: relative;
+    background-image: url('./img/portada\ inicio.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-content h1, .hero-content p {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+
+.navbar .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    color: #9e7f66;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #9e7f66;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #6f5842;
+}
+
+/* Social Media Links */
+.social-media {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    bottom: 20px; /* Mantén la posición que quieras */
+    left: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+}
+
+.social-media img {
+    width: 40px;  /* Tamaño del ícono */
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    width: 30%;
+    min-width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.service-item p {
+    margin: 15px 0;
+}
+
+/* Popular Products Section */
+.popular-products {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #e7dace;
+}
+
+.popular-products h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    width: 22%;
+    min-width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-item p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #9e7f66;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #6f5842;
+}
+
+/* Shopping Cart Section */
+.shopping-cart {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f5ede4;
+}
+
+.shopping-cart h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.shopping-cart ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.shopping-cart li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+/* Contact Section */
+/* Contact Section */
+.contact-section {
+    background-image: url('img/portada\ producto.jpg'); /* Asegúrate de proporcionar la ruta correcta */
+    background-size: cover; /* Cubre todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    padding: 60px 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 800px; /* Ancho máximo de la sección */
+    margin: 40px auto; /* Centrar la sección en la página */
+    color: #fff; /* Color de texto blanco para mejor legibilidad */
+}
+
+.contact-section h2 {
+    font-size: 30px; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.contact-section p {
+    font-size: 18px; /* Tamaño del párrafo */
+    margin-bottom: 30px; /* Espacio debajo del párrafo */
+}
+
+.contact-section .btn {
+    display: inline-block; /* Para que el botón tenga el tamaño adecuado */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 18px; /* Tamaño de la fuente del botón */
+    color: #fff; /* Color blanco del texto del botón */
+    background-color: #9e7f66; /* Color de fondo del botón con un poco de transparencia */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+.contact-section .btn:hover {
+    background-color: #9e7f66; /* Color más oscuro al pasar el ratón */
+}
+
+.contact-section {
+    background-color: #ffffff; /* Fondo blanco para mantener la paleta */
+    padding: 60px 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 800px; /* Ancho máximo de la sección */
+    margin: 40px auto; /* Centrar la sección en la página */
+}
+
+.contact-section h2 {
+    font-size: 30px; /* Tamaño del título */
+    color: #000000; /* Color oscuro del texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.contact-section p {
+    font-size: 18px; /* Tamaño del párrafo */
+    color: #000000; /* Color gris del texto */
+    margin-bottom: 30px; /* Espacio debajo del párrafo */
+}
+
+.contact-section .btn {
+    display: inline-block; /* Para que el botón tenga el tamaño adecuado */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 18px; /* Tamaño de la fuente del botón */
+    color: #fff; /* Color blanco del texto del botón */
+    background-color: #9e7f66; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+.contact-section .btn:hover {
+    background-color: #996c46; /* Color más oscuro al pasar el ratón */
+}
+.newsletter-section {
+    padding: 50px;
+    background-color:#d9cdc3;
+    text-align: center;
+}
+
+.newsletter-content form {
+    margin-top: 20px;
+}
+
+.newsletter-content input {
+    padding: 10px;
+    width: 300px;
+}
+
+.newsletter-content button {
+    padding: 10px 20px;
+    background-color:#6f5842;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer Section */
+footer {
+    background-color:#6f5842;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.footer-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin: 0 10px;
+}
+
+.footer-content ul li a {
+    color: white;
+    font-size: 16px;
+}
+
+.footer-content ul li a:hover {
+    color: #9e7f66;
+}
